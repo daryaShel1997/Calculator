@@ -36,18 +36,18 @@ public class Main2Activity extends AppCompatActivity {
 
 
         mDrawerLayout = findViewById(R.id.my_drawer_layout);
-        //toolbar=findViewById(R.id.toolbar_ty);
+        toolbar = findViewById(R.id.toolbar);
 
 
         NavigationView navigationView = findViewById(R.id.nav_view);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-       navigationView.setNavigationItemSelectedListener(
+        navigationView.setNavigationItemSelectedListener(
                 menuItem -> {
                     Intent intent;
                     Log.d("WIII", "" + menuItem.getItemId());
@@ -78,7 +78,7 @@ public class Main2Activity extends AppCompatActivity {
                                     .commit();
                             break;
 
-                        case R.id.index_ketle:
+                        case R.id.index_ketle1:
                             IndexKetle frag4 = new IndexKetle();
                             getSupportFragmentManager()
                                     .beginTransaction()
@@ -118,6 +118,5 @@ public class Main2Activity extends AppCompatActivity {
         });
 
     }
-
 
 }
