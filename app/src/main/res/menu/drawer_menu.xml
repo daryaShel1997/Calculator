@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/formula_brock1"
+            android:title="@string/formula_brock" />
+        <item
+            android:id="@+id/formula_lorenz1"
+            android:title="@string/formula_lorenz" />
+        <item
+        android:id="@+id/table_egorov_levitsky1"
+        android:title="@string/table_egorov_levitsky" />
+        <item
+            android:id="@+id/index_ketle1"
+            android:title="@string/index_ketle" />
+
+        <item
+            android:id="@+id/index_body_mass1"
+            android:title="@string/index_body_mass" />
+
+
+    </group>
+</menu>
